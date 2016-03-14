@@ -1,5 +1,226 @@
-@import url(http://fonts.googleapis.com/earlyaccess/droidarabicnaskh.css);
-h1, body {
+/*@import url(http://fonts.googleapis.com/earlyaccess/droidarabicnaskh.css);*/
+/*h1, body {
   font-family:  'Droid Arabic Naskh';
   h1:  'Droid Arabic Naskh';
+}*/
+
+/*******************************************
+	Basic 
+*******************************************/
+@font-face {
+	font-family: 'sans';
+
+	src: url('css/fonts/sans-bold/IRANSans-Bold.eot?#') format('eot'),  /* IE6�8 */
+	url('css/fonts/sans-bold/IRANSans-Bold.woff2') format('woff2'),  /* Chrome36+, Opera24+*/
+	url('css/fonts/sans-bold/IRANSans-Bold.woff') format('woff');  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+	font-weight: bold;
 }
+
+@font-face {
+	font-family: 'sans-light';
+	src: url('css/fonts/sans-light/IRANSans.eot?#') format('eot'),  /* IE6�8 */
+	url('css/fonts/sans-light/IRANSans.woff2') format('woff2'),  /* Chrome36+, Opera24+*/
+	url('css/fonts/sans-light/IRANSans.woff') format('woff');  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+	font-weight: 200;
+}
+@font-face {
+	font-family: 'sans-ultra';
+	src: url('css/fonts/sans-ultra-light/IRAN-Sans-Ultra-Light.eot?#') format('eot'),  /* IE6�8 */
+	url('css/fonts/sans-ultra-light/IRAN-Sans-Ultra-Light.woff2') format('woff2'),  /* Chrome36+, Opera24+*/
+	url('css/fonts/sans-ultra-light/IRAN-Sans-Ultra-Light.woff') format('woff');  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+	font-weight: 200;
+}
+
+*, *::after, *::before {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body{
+	font-family: sans-ultra !important;
+}
+
+h1,h2,h3,h4,h5,h6{
+	font-family: sans;
+}
+/************************************************
+	content
+************************************************/
+.button.hollow{
+	border: 1px solid #fe4365;
+	color: #fff;
+	border-radius: 7px;
+}
+.button.hollow:focus, .button.hollow:hover {
+	border: 1px solid #fe4365;
+    background-color: #df3a58;
+    color: #fff;
+   }
+.button.warning{
+	background-color: #fe4365;
+	border-radius: 7px;
+}
+.button.warning:focus, .button.warning:hover{
+	background-color: #df3a58;
+}
+
+.nav-top{
+	background-color: #f9c00c;
+}
+
+.body{
+	background-color: #6a60a9;
+	height: 100%;
+}
+.bodycon{
+	background-color: #6a60a9;
+	height: 100%;
+}
+
+.bodyabout{
+	background-color: #4f4d5a;
+	/*height: 100%;*/
+}
+.content{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50% , -50%);
+	overflow: hidden;
+}
+.content h1{
+	color: rgb(255, 255, 255);
+	font-size: 4em;
+}
+
+
+
+.content p{
+	color: #ebebeb;
+	font-size: 1.5em;
+	padding-bottom: 1em;
+}
+
+.congrats p{
+	color: #ebebeb;
+	font-size: 1.0em;
+	padding-bottom: 1em;
+	width: 50%;
+	margin: 0 auto;
+}
+
+.congrats h1{
+	color: rgb(255, 255, 255);
+	font-size: 2em;
+}
+.callout.large{
+	padding: 0;
+}
+.callout{
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+.top-bar, .top-bar ul{
+	background-color: #f9c00c;
+}
+
+.menu-text{
+	color: #363636;
+}
+
+.menu > li > a{
+	font-family: sans;
+	color: #fff;
+}
+
+.menu > li > a:hover{
+	color: #363636;
+}
+
+.cup{
+	color: #f9c00c;
+
+}
+.navblock{
+	display: block;
+}
+.svg{
+	margin-top: 320px;
+}
+a.twitter  {
+	color: #fff;
+	padding-left: 10px;
+	padding-bottom: 10px;
+}
+
+a:hover.twitter  {
+	color:  #00aced;
+}
+
+a.facebook  {
+	color: #fff;
+	padding-left: 10px;
+	padding-bottom: 10px;
+}
+
+a:hover.facebook  {
+	color:  #3b5998;
+}
+
+a.gplus  {
+	color: #fff;
+	padding-left: 10px;
+	padding-bottom: 10px;
+}
+
+a:hover.gplus  {
+	color:  #d34836;
+}
+ /*==========  Non-Mobile First Method  ==========*/
+
+    /* Large Devices, Wide Screens */
+    @media only screen and (max-width : 1200px) {
+
+
+    }
+
+
+    /* Medium Devices, Desktops */
+    @media only screen and (max-width : 992px) {
+
+    	.bodycon{
+    		height: auto;
+    	}
+
+		.content h1{
+			color: rgb(255, 255, 255);
+			font-size: 2em;
+		}
+
+
+
+		.content p{
+			color: #ebebeb;
+			font-size: 1.0em;
+			padding-bottom: 1em;
+		}
+    }
+
+    /* Small Devices, Tablets */
+    @media only screen and (max-width : 768px) {
+
+    }
+
+    /* Extra Small Devices, Phones */ 
+    @media only screen and (max-width : 480px) {
+
+
+    }
+
+    /* Custom, iPhone Retina  */
+    @media only screen and (max-width : 320px) {
+        
+        
+    }
